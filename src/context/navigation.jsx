@@ -92,9 +92,9 @@ const NavigationProvider = ({ children }) => {
                 isActive: false,
             }
         },
-        bags: {
+        login: {
             meta: {
-                title: "Bags",
+                title: "Login",
                 isActive: false,
             },
         },
@@ -126,10 +126,10 @@ const NavigationProvider = ({ children }) => {
     }
 
     // BAGS
-    if (firstPath === 'bags') {
-        navigationState.bags.meta.isActive = true;
+    if (firstPath === 'login') {
+        navigationState.login.meta.isActive = true;
         Object.keys(navigationState).forEach((key) => {
-            if (key !== 'bags' && key !== 'meta') {
+            if (key !== 'login' && key !== 'meta') {
                 navigationState[key].meta.isActive = false
             }
         })
