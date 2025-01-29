@@ -1,4 +1,3 @@
-import './App.css'
 import useNavigation from './hooks/useNavigation'
 import Home from './pages/Home';
 import Login from './pages/Login'
